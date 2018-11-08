@@ -13,9 +13,11 @@
 		7B69B2E51E4A624100E46C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B69B2E41E4A624100E46C97 /* Assets.xcassets */; };
 		7B69B2E81E4A624100E46C97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B69B2E61E4A624100E46C97 /* LaunchScreen.storyboard */; };
 		7B69B2F01E4A698100E46C97 /* ClassBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69B2EF1E4A698100E46C97 /* ClassBVC.swift */; };
+		D208114471A6B19E14BEEB82 /* Pods_DelegateTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54520B3F9972AB6D3AE22C2F /* Pods_DelegateTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54520B3F9972AB6D3AE22C2F /* Pods_DelegateTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DelegateTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B69B2DA1E4A624100E46C97 /* DelegateTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B69B2DD1E4A624100E46C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B69B2DF1E4A624100E46C97 /* ClassAVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAVC.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		7B69B2E71E4A624100E46C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B69B2E91E4A624100E46C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B69B2EF1E4A698100E46C97 /* ClassBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassBVC.swift; sourceTree = "<group>"; };
+		BB29B51A18FC7EACE86F7A33 /* Pods-DelegateTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		C5608CA77404A34806AD0524 /* Pods-DelegateTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D208114471A6B19E14BEEB82 /* Pods_DelegateTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63268C2257E950F92FA8A835 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54520B3F9972AB6D3AE22C2F /* Pods_DelegateTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B69B2D11E4A624100E46C97 = {
 			isa = PBXGroup;
 			children = (
 				7B69B2DC1E4A624100E46C97 /* DelegateTutorial */,
 				7B69B2DB1E4A624100E46C97 /* Products */,
+				A06691484441DCB59B807362 /* Pods */,
+				63268C2257E950F92FA8A835 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = DelegateTutorial;
 			sourceTree = "<group>";
 		};
+		A06691484441DCB59B807362 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB29B51A18FC7EACE86F7A33 /* Pods-DelegateTutorial.debug.xcconfig */,
+				C5608CA77404A34806AD0524 /* Pods-DelegateTutorial.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B69B2EC1E4A624100E46C97 /* Build configuration list for PBXNativeTarget "DelegateTutorial" */;
 			buildPhases = (
+				084F2A49770D945D5096C2EE /* [CP] Check Pods Manifest.lock */,
 				7B69B2D61E4A624100E46C97 /* Sources */,
 				7B69B2D71E4A624100E46C97 /* Frameworks */,
 				7B69B2D81E4A624100E46C97 /* Resources */,
+				E987175F95DF86538BE41BB1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +160,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		084F2A49770D945D5096C2EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DelegateTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E987175F95DF86538BE41BB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7B69B2D61E4A624100E46C97 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		7B69B2ED1E4A624100E46C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB29B51A18FC7EACE86F7A33 /* Pods-DelegateTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ULU46F325W;
@@ -274,6 +350,7 @@
 		};
 		7B69B2EE1E4A624100E46C97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5608CA77404A34806AD0524 /* Pods-DelegateTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ULU46F325W;
