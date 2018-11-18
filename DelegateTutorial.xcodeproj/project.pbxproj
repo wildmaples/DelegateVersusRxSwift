@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		7B69B2DE1E4A624100E46C97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69B2DD1E4A624100E46C97 /* AppDelegate.swift */; };
-		7B69B2E01E4A624100E46C97 /* ClassAVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69B2DF1E4A624100E46C97 /* ClassAVC.swift */; };
+		7B69B2E01E4A624100E46C97 /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69B2DF1E4A624100E46C97 /* ViewControllerA.swift */; };
 		7B69B2E31E4A624100E46C97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B69B2E11E4A624100E46C97 /* Main.storyboard */; };
 		7B69B2E51E4A624100E46C97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B69B2E41E4A624100E46C97 /* Assets.xcassets */; };
 		7B69B2E81E4A624100E46C97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B69B2E61E4A624100E46C97 /* LaunchScreen.storyboard */; };
-		7B69B2F01E4A698100E46C97 /* ClassBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69B2EF1E4A698100E46C97 /* ClassBVC.swift */; };
+		7B69B2F01E4A698100E46C97 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B69B2EF1E4A698100E46C97 /* ViewControllerB.swift */; };
+		C0184142D102E591AFC947D1 /* Pods_DelegateTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67E26557A9812F22D413F3E /* Pods_DelegateTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18601508E780B58911152126 /* Pods-DelegateTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		7B69B2DA1E4A624100E46C97 /* DelegateTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B69B2DD1E4A624100E46C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B69B2DF1E4A624100E46C97 /* ClassAVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAVC.swift; sourceTree = "<group>"; };
+		7B69B2DF1E4A624100E46C97 /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		7B69B2E21E4A624100E46C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B69B2E41E4A624100E46C97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B69B2E71E4A624100E46C97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B69B2E91E4A624100E46C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B69B2EF1E4A698100E46C97 /* ClassBVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassBVC.swift; sourceTree = "<group>"; };
+		7B69B2EF1E4A698100E46C97 /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		AB722D82A068EB80B144E41A /* Pods-DelegateTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		D67E26557A9812F22D413F3E /* Pods_DelegateTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DelegateTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0184142D102E591AFC947D1 /* Pods_DelegateTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				7B69B2DC1E4A624100E46C97 /* DelegateTutorial */,
 				7B69B2DB1E4A624100E46C97 /* Products */,
+				E43FCC6D77A975F5AD5F4C75 /* Pods */,
+				ABC1EA7B2992F91F85B31A03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				7B69B2DD1E4A624100E46C97 /* AppDelegate.swift */,
-				7B69B2DF1E4A624100E46C97 /* ClassAVC.swift */,
-				7B69B2EF1E4A698100E46C97 /* ClassBVC.swift */,
+				7B69B2DF1E4A624100E46C97 /* ViewControllerA.swift */,
+				7B69B2EF1E4A698100E46C97 /* ViewControllerB.swift */,
 				7B69B2E11E4A624100E46C97 /* Main.storyboard */,
 				7B69B2E41E4A624100E46C97 /* Assets.xcassets */,
 				7B69B2E61E4A624100E46C97 /* LaunchScreen.storyboard */,
 				7B69B2E91E4A624100E46C97 /* Info.plist */,
 			);
 			path = DelegateTutorial;
+			sourceTree = "<group>";
+		};
+		ABC1EA7B2992F91F85B31A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D67E26557A9812F22D413F3E /* Pods_DelegateTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E43FCC6D77A975F5AD5F4C75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18601508E780B58911152126 /* Pods-DelegateTutorial.debug.xcconfig */,
+				AB722D82A068EB80B144E41A /* Pods-DelegateTutorial.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B69B2EC1E4A624100E46C97 /* Build configuration list for PBXNativeTarget "DelegateTutorial" */;
 			buildPhases = (
+				B6B4AAFA5C90F3BFF2D239B3 /* [CP] Check Pods Manifest.lock */,
 				7B69B2D61E4A624100E46C97 /* Sources */,
 				7B69B2D71E4A624100E46C97 /* Frameworks */,
 				7B69B2D81E4A624100E46C97 /* Resources */,
+				08809752A5601C695C730750 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -94,12 +120,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "James Rochabrun";
 				TargetAttributes = {
 					7B69B2D91E4A624100E46C97 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = ULU46F325W;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,13 +162,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08809752A5601C695C730750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DelegateTutorial/Pods-DelegateTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B4AAFA5C90F3BFF2D239B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DelegateTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B69B2D61E4A624100E46C97 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B69B2E01E4A624100E46C97 /* ClassAVC.swift in Sources */,
-				7B69B2F01E4A698100E46C97 /* ClassBVC.swift in Sources */,
+				7B69B2E01E4A624100E46C97 /* ViewControllerA.swift in Sources */,
+				7B69B2F01E4A698100E46C97 /* ViewControllerB.swift in Sources */,
 				7B69B2DE1E4A624100E46C97 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,15 +253,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -226,15 +311,24 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -261,6 +355,7 @@
 		};
 		7B69B2ED1E4A624100E46C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18601508E780B58911152126 /* Pods-DelegateTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ULU46F325W;
@@ -268,12 +363,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.speedelo.DelegateTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		7B69B2EE1E4A624100E46C97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB722D82A068EB80B144E41A /* Pods-DelegateTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ULU46F325W;
@@ -281,7 +378,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.speedelo.DelegateTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

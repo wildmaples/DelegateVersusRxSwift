@@ -1,5 +1,5 @@
 //
-//  ClassBVC.swift
+//  BViewController.swift
 //  DelegateTutorial
 //
 //  Created by James Rochabrun on 2/7/17.
@@ -7,19 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
-//MARK: step 1 Add Protocol here
-protocol ClassBVCDelegate: class {
-    func changeBackgroundColor(_ color: UIColor?)
-}
-
-class ClassBVC: UIViewController {
+class ViewControllerB: UIViewController {
     
-
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
-    //MARK: step 2 Create a delegate property here, don't forget to make it weak!
-    weak var delegate: ClassBVCDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,17 +26,20 @@ class ClassBVC: UIViewController {
         secondView.layer.borderWidth = 2.0
         secondView.layer.cornerRadius = secondView.frame.width / 2
         secondView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(_:))))
-        
     }
+    
     @IBAction func dismissView(_ sender: UIBarButtonItem) {
         navigationController?.dismiss(animated: true)
     }
     
-    func handleTap(_ tapGesture: UITapGestureRecognizer) {
-        
+    var changeBackgroundColor: Observable<UIColor> = BehaviorSubject(value: .cyan)
+    
+    @objc func handleTap(_ tapGesture: UITapGestureRecognizer) {
         view.backgroundColor = tapGesture.view?.backgroundColor
-        //MARK: step 3 Add the delegate method call here
-        delegate?.changeBackgroundColor(tapGesture.view?.backgroundColor)
+        guard let newBackgroundColor = view.backgroundColor else {
+            return
+        }
         
+        (changeBackgroundColor as? BehaviorSubject)?.onNext(newBackgroundColor)
     }
 }
