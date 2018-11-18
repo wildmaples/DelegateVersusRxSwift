@@ -1,5 +1,5 @@
 //
-//  ClassBVC.swift
+//  BViewController.swift
 //  DelegateTutorial
 //
 //  Created by James Rochabrun on 2/7/17.
